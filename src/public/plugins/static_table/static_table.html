@@ -1,0 +1,21 @@
+<div ng-controller="KbnStaticTableController" class="markdown-vis">
+    <div ng-bind-html="html"></div>
+    <div ng-if="filtered">
+    	<div class="host-combo-section">
+	  		<label>Select Host: </label>
+	    	<select ng-model="selectedHost.hostname" ng-options="host.key as host.key for host in hosts" ng-change="hostFilterChange(selectedHost.hostname)"></select>
+    	</div>
+    	<div class="table-category"><label>System Information</label></div>
+	    <table class="static-table">
+	    	<tbody>
+	    		<tr ng-repeat="header in headers" href="#">
+	    			<td><label>{{header}}</label></td>
+	    			<td>{{resultsArr[header]}}</td>
+	    		</tr>
+	    	</tbody>
+	    </table>
+    </div>
+    <div ng-if="!filtered">
+    	<label>No results found.</label>
+    </div>
+</div>
