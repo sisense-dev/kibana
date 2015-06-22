@@ -1,6 +1,6 @@
 
 
-Kibana 4.1.0-snapshot
+Kibana 4.2.0-snapshot
 =====================
 
 Build Status

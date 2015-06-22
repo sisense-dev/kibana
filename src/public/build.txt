@@ -3,18 +3,19 @@ index.js
 ----------------
 bower_components/jquery/dist/jquery.js
 bower_components/angular/angular.js
-bower_components/lodash/dist/lodash.js
-bower_components/lodash-deep/factory.js
-utils/_mixins_chainable.js
-utils/_mixins_notchainable.js
-utils/_mixins.js
+bower_components/lodash/lodash.js
+utils/lodash-mixins/string.js
+utils/lodash-mixins/lang.js
+utils/lodash-mixins/object.js
+utils/lodash-mixins/collection.js
+utils/lodash-mixins/function.js
+utils/lodash-mixins/oop.js
+utils/lodash-mixins/index.js
 utils/modules.js
 utils/routes/_work_queue.js
 components/errors.js
 components/courier/_request_queue.js
 components/courier/_error_handlers.js
-components/courier/fetch/strategy/doc.js
-components/courier/fetch/strategy/search.js
 components/courier/fetch/_notifier.js
 components/courier/fetch/_for_each_strategy.js
 bower_components/moment/moment.js
@@ -30,6 +31,7 @@ components/courier/fetch/_fetch_these.js
 components/courier/fetch/fetch.js
 components/courier/data_source/_decorate_query.js
 components/courier/data_source/_abstract.js
+components/courier/fetch/strategy/search.js
 components/courier/fetch/request/search.js
 utils/rison.js
 utils/BaseObject.js
@@ -84,6 +86,7 @@ components/index_patterns/_local_cache.js
 components/index_patterns/_mapper.js
 components/index_patterns/_get_computed_fields.js
 components/courier/data_source/_doc_send_to_es.js
+components/courier/fetch/strategy/doc.js
 components/courier/fetch/request/doc.js
 components/courier/data_source/doc_source.js
 utils/mapping_setup.js
@@ -150,6 +153,7 @@ components/filter_bar/filter_bar_click_handler.js
 plugins/dashboard/components/panel/lib/visualization.js
 plugins/dashboard/components/panel/lib/search.js
 plugins/dashboard/components/panel/lib/load_panel.js
+plugins/settings/saved_object_registry.js
 bower_components/FileSaver/FileSaver.js
 components/vis/_agg_config.js
 components/agg_response/tabify/_table.js
@@ -203,7 +207,6 @@ components/doc_table/doc_table.js
 text!plugins/dashboard/components/panel/panel.html
 plugins/dashboard/components/panel/panel.js
 plugins/dashboard/services/_saved_dashboard.js
-plugins/settings/saved_object_registry.js
 plugins/dashboard/services/saved_dashboards.js
 css!plugins/dashboard/styles/main
 text!plugins/dashboard/index.html
@@ -526,7 +529,6 @@ text!plugins/settings/sections/advanced/advanced_row.html
 plugins/settings/sections/advanced/advanced_row.js
 text!plugins/settings/sections/advanced/index.html
 plugins/settings/sections/advanced/index.js
-bower_components/inflection/lib/inflection.js
 text!plugins/settings/sections/objects/_view.html
 plugins/settings/sections/objects/_view.js
 text!plugins/settings/sections/objects/_objects.html

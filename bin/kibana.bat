@@ -10,7 +10,7 @@ set SERVER=%DIR%\src\bin\kibana.js
 set NODE_ENV="production"
 set CONFIG_PATH=%DIR%\config\kibana.yml
 
-TITLE Kibana Server 4.1.0-snapshot
+TITLE Kibana Server 4.2.0-snapshot
 
 "%NODE%" "%SERVER%" %*
 
